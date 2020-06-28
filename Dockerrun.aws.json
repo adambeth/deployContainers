@@ -1,0 +1,29 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+        {
+            "name": "Client",
+            "image": "herrowpreeze/client",
+            "hostname": "client",
+            "essential": false
+        },
+        {
+            "name": "Server",
+            "image": "herrowpreeze/server",
+            "hostname": "server",
+            "essential": false
+        },
+        {
+            "name": "Worker",
+            "image": "herrowpreeze/worker",
+            "hostname": "worker",
+            "essential": false
+        },
+        {
+            "name": "NGINX",
+            "image": "herrowpreeze/nginx",
+            "hostname": "nginx",
+            "essential": false
+        }
+    ]
+}
